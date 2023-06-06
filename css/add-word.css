@@ -1,0 +1,306 @@
+/*! <---------header section --------->*/
+
+.header-btn {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  top: 0;
+  margin-top: 15px;
+}
+
+/*! <---------switch button section --------->*/
+
+.switch-mode {
+  background: var(--black-semi);
+  border-radius: 8px;
+  margin-right: 40px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
+button span {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  background: none;
+  color: var(--white-bone);
+}
+
+.switch-mode::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background: var(--white-bone);
+  top: 1;
+  left: 0;
+  right: unset;
+  border-radius: 6px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.switch-mode.active {
+  background: var(--dark-light-gray);
+  color: #000;
+}
+
+.switch-mode.active::after {
+  right: 0;
+  left: unset;
+}
+
+/*! <--------- Main section --------->*/
+
+.container {
+  z-index: 1;
+  position: relative;
+  background: linear-gradient(45deg, #ffd541 50%, #fdcd1d 50%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-logo {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-logo .logo-title .logo-title-dm {
+  width: 100%;
+}
+
+.logo-title-dm {
+  display: none;
+}
+
+/*! <--------- Text Area section --------->*/
+
+.text-area-container {
+  width: 80%;
+  max-width: 560px;
+  height: 200px;
+}
+
+.text-content {
+  text-transform: uppercase;
+  outline: none;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Heebo", sans-serif;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 5px 1px #24242457;
+  box-shadow: 1px 2px 5px 1px #24242452;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+.text-advert {
+  font-size: 14px;
+  font-family: "Heebo", sans-serif;
+}
+
+/*! <--------- Notification alert section --------->*/
+
+.icon-head {
+  margin-top: 15px;
+  width: 40px;
+}
+
+.alert-container.active {
+  z-index: 2;
+}
+
+.alert.active {
+  opacity: 1;
+}
+
+.scale-out-center.active {
+  -webkit-animation: scale-out-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: scale-out-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+.bounce-in-fwd.active {
+  -webkit-animation: bounce-in-fwd 700ms both;
+  animation: bounce-in-fwd 700ms both;
+}
+
+.alert-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 28px;
+  opacity: 0;
+  transform: translateY(-550px);
+  z-index: 1;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  padding: 30px 30px;
+  background: #1e2220;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  
+}
+
+/*! <--------- buttons section --------->*/
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.save-word {
+  cursor: pointer;
+  text-align: center;
+  background-size: 200% auto;
+  background-color: #1e2220;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 253, 253);
+  text-decoration: none;
+  padding: 22px 55px;
+  border-radius: 14px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.btn-start-game:hover,
+.btn-add-word:hover,
+.logo-alura:hover,
+.save-word:hover {
+  transform: scale(1.08);
+}
+
+.save-word:hover {
+  font-weight: bold;
+  font-size: 19.5px;
+  border: 4px solid #fff;
+  color: #1e2220;
+  -webkit-box-shadow: 2px 2px 5px 1px #2424247c;
+  box-shadow: 2px 2px 5px 1px #2424247c;
+  background: linear-gradient(45deg, #fdcd1d 53%, #ffd541 50%);
+}
+
+.btn-add-word:hover {
+  font-weight: 500;
+  color: #fff;
+  border: transparent;
+  -webkit-box-shadow: 1px 2px 5px 1px #2424247c;
+  box-shadow: 1px 2px 5px 1px #2424247c;
+  background-color: #1e2220;
+}
+
+.btn-start-game:hover,
+.save-word:hover,
+.btn-add-word:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #2424247c;
+  box-shadow: 2px 2px 5px 2px #2424247c;
+}
+
+.btn-add-word {
+  text-align: center;
+  background-color: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  color: #1e2220;
+  text-decoration: none;
+  width: 200px;
+  padding: 12px 10px;
+  border-radius: 14px;
+  border: 4px solid rgb(255, 253, 253);
+  transition: all 0.2s ease-in-out;
+}
+
+/*! <--------- social buttons section --------->*/
+
+.social-icon-content-dark-mode {
+  display: none;
+}
+
+.social-icon-content a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.social-icon-content a img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon-content a img:hover {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transform: scale(1.32);
+}
+
+.social-icon-content-dark-mode a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.social-icon-content-dark-mode a img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon-content-dark-mode a img:hover {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transform: scale(1.32);
+}
+
+footer {
+  position: relative;
+  top: 25px;
+}
+
+.name-copy {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Heebo", sans-serif;
+}
+
+.name-footer-dm {
+  display: none;
+}

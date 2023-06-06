@@ -1,0 +1,228 @@
+body {
+  height: auto;
+}
+
+/*! <---------header section --------->*/
+
+.header-btn {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  top: 0;
+  margin-top: 15px;
+
+}
+
+/*! <---------switch button section --------->*/
+
+.switch-mode {
+  background: var(--black-semi);
+  border-radius: 8px;
+  margin-right: 40px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
+button span {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  background: none;
+  color: var(--white-bone);
+}
+
+.switch-mode::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background: var(--white-bone);
+  top: 1;
+  left: 0;
+  right: unset;
+  border-radius: 6px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.switch-mode.active {
+  background: var(--dark-light-gray);
+  color: #000;
+}
+
+.switch-mode.active::after {
+  right: 0;
+  left: unset;
+}
+
+/* .logo-alura {
+  margin-left: 20px;
+  transition: all 0.2s ease-in-out;
+} */
+
+/*! <--------- Main section --------->*/
+
+.container-index {
+  background: linear-gradient(45deg, #ffd541 50%, #fdcd1d 50%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s ease all;
+}
+
+.content-logo {
+  justify-content: space-between;
+  position: relative;
+  width: 285px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.logo-title-dm {
+  display: none;
+}
+
+/*! <--------- buttons section --------->*/
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.btn-start-game {
+  text-align: center;
+  background-size: 200% auto;
+  background-color: #1e2220;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 253, 253);
+  text-decoration: none;
+  margin-bottom: 17px;
+  padding: 22px 82px;
+  border-radius: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.btn-start-game:hover,
+.btn-add-word:hover {
+  transform: scale(1.08);
+}
+
+/* #ffd541  #fdcd1d */
+
+.btn-start-game:hover {
+  font-weight: bold;
+  font-size: 19.5px;
+  border: 4px solid #fff;
+  color: #1e2220;
+  -webkit-box-shadow: 2px 2px 5px 1px #2424247c;
+  box-shadow: 2px 2px 5px 1px #2424247c;
+  background: linear-gradient(45deg, #fdcd1d 53%, #ffd541 50%);
+}
+
+.btn-add-word:hover {
+  font-weight: 500;
+  color: #fff;
+  border: transparent;
+  -webkit-box-shadow: 1px 2px 5px 1px #2424247c;
+  box-shadow: 1px 2px 5px 1px #2424247c;
+  background-color: #1e2220;
+}
+
+.btn-add-word:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #2424247c;
+  box-shadow: 2px 2px 5px 2px #2424247c;
+}
+
+.btn-add-word {
+  text-align: center;
+  background-color: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  color: #1e2220;
+  text-decoration: none;
+  width: 200px;
+  padding: 12px 10px;
+  border-radius: 14px;
+  border: 4px solid rgb(255, 253, 253);
+  transition: all 0.2s ease-in-out;
+}
+
+/*! <--------- social buttons section --------->*/
+
+.social-icon-content-dark-mode {
+  display: none;
+}
+
+.social-icon-content a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.social-icon-content a img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon-content a img:hover {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transform: scale(1.32);
+}
+
+.social-icon-content-dark-mode a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.social-icon-content-dark-mode a img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon-content-dark-mode a img:hover {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transform: scale(1.32);
+}
+
+footer {
+  position: relative;
+  top: 60px;
+}
+
+.name-copy {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Heebo", sans-serif;
+}
+
+
+.name-footer-dm {
+  display: none;
+}
+
+
+

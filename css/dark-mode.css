@@ -1,0 +1,144 @@
+:root {
+  --black-semi: #1e2220;
+  --shadow-dark-bold: #171a25;
+  --dark-bold: #1e2331;
+  --dark-light: #24293a;
+  --dark-light-gray: #373c4a;
+  --white-gray: #d0d7e3;
+  --white-bone: #f5f7fa;
+}
+
+/*! <--------- Main section --------->*/
+
+body.dark .container-index,
+body.dark .container {
+  background: linear-gradient(
+    45deg,
+    var(--dark-light) 50%,
+    var(--dark-bold) 50%
+  );
+}
+
+.logo-title.active,
+.logo-title-dm.active {
+  display: block;
+}
+
+.logo-title.disabled,
+.logo-title-dm.disabled {
+  display: none;
+}
+
+.logo-title-game.active,
+.logo-title-game-dm.active {
+  display: block;
+}
+
+.logo-title-game.disabled,
+.logo-title-game-dm.disabled {
+  display: none;
+}
+
+/*! <--------- Canvas section --------->*/
+
+body.dark .content-canvas {
+  background-color: var(--dark-bold);
+  -webkit-box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+  box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+}
+
+body.dark canvas {
+  background-color: var(--shadow-dark-bold);
+  -webkit-box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+  box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+}
+
+
+body.dark .num-intentos,
+body.dark h2,
+body.dark .true-letters span,
+body.dark .wrong-letters span {
+  color: var(--white-gray);
+}
+
+/*! <--------- button section --------->*/
+
+body.dark .btn-start-game,
+body.dark .save-word,
+body.dark .new-game {
+  background: var(--dark-light-gray);
+  color: var(--white-bone);
+  -webkit-box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+  box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+}
+
+body.dark .btn-add-word,
+body.dark .leave-game {
+  border: 2.5px solid var(--dark-light-gray);
+  border-color: var(--white-gray);
+  color: var(--white-gray);
+  -webkit-box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+  box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+}
+
+body.dark .btn-start-game:hover,
+body.dark .save-word:hover,
+body.dark .new-game:hover {
+  border: 4px solid var(--dark-light-gray);
+  background: linear-gradient(
+    45deg,
+    var(--dark-light) 57%,
+    var(--dark-bold) 50%
+  );
+}
+
+body.dark .btn-add-word:hover,
+body.dark .leave-game:hover {
+  background: var(--dark-light-gray);
+  border: none;
+}
+
+body.dark .text-advert {
+  color: var(--white-bone);
+}
+
+body.dark .text-content {
+  background-color: var(--white-gray);
+}
+
+body.dark .alert {
+  background-color: var(--dark-light-gray);
+  color: var(--white-bone);
+}
+
+/*! <--------- footer section --------->*/
+
+.social-icon-content.active,
+.social-icon-content-dark-mode.active {
+  display: block;
+}
+
+.social-icon-content.disabled,
+.social-icon-content-dark-mode.disabled {
+  display: none;
+}
+
+.name-footer.active,
+.name-footer-dm.active {
+  display: block;
+}
+
+.name-footer.disabled,
+.name-footer-dm.disabled {
+  display: none;
+}
+
+body.dark .name-copy {
+  color: var(--white-gray);
+}
+
+body.dark .social-icon-content-dark-mode a img:hover {
+  border: 1px solid var(--shadow-dark-bold);
+  -webkit-box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+  box-shadow: 1px 2px 5px 1px var(--shadow-dark-bold);
+}

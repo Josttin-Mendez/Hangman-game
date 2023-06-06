@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0.15465in" height="0.154827in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 0.2 0.2"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil5 {fill:#201E1E}
+    .fil4 {fill:black}
+    .fil2 {fill:#564535}
+    .fil1 {fill:#7C5011}
+    .fil3 {fill:#FFA1FD}
+    .fil0 {fill:#FFC364}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1504311027696">
+   <polygon class="fil0" points="-0,0.02 0.02,0.02 0.02,0 -0,0 "/>
+   <rect class="fil1" transform="matrix(2.66283E-14 -1.08732 1.00565 2.8791E-14 0.021413 0.0993993)" width="0.06" height="0.06"/>
+   <rect class="fil1" transform="matrix(2.66283E-14 -1.09234 1.00565 2.89239E-14 0.117809 0.0995817)" width="0.06" height="0.06"/>
+   <polygon class="fil1" points="-0,0.02 -0,0.2 0.02,0.2 0.05,0.2 0.07,0.2 0.07,0.15 0.05,0.15 0.05,0.15 0.05,0.1 0.02,0.1 0.02,0.05 0.07,0.05 0.07,0.1 0.12,0.1 0.12,0.05 0.17,0.05 0.17,0.1 0.15,0.1 0.15,0.15 0.15,0.15 0.12,0.15 0.12,0.2 0.15,0.2 0.17,0.2 0.2,0.2 0.2,0.02 0.17,0.02 0.17,0 0.02,0 0.02,0.02 "/>
+   <rect class="fil2" x="0.05" y="0.15" width="0.1" height="0.05"/>
+   <polygon class="fil0" points="0.07,0.15 0.12,0.15 0.15,0.15 0.15,0.15 0.15,0.1 0.12,0.1 0.12,0.12 0.07,0.12 0.07,0.1 0.05,0.1 0.05,0.15 0.05,0.15 "/>
+   <polygon class="fil3" points="0.07,0.2 0.12,0.2 0.12,0.15 0.07,0.15 "/>
+   <polygon class="fil4" points="0.12,0.1 0.07,0.1 0.07,0.12 0.12,0.12 "/>
+   <polygon class="fil0" points="0.2,0.03 0.2,0 0.17,0 0.17,0.03 "/>
+   <g>
+    <rect class="fil5" x="0.15" y="0.05" width="0.01" height="0.05"/>
+    <rect class="fil5" transform="matrix(9.21433E-15 -0.347914 0.328738 8.70647E-15 0.130536 0.0810433)" width="0.04" height="0.15"/>
+   </g>
+   <g>
+    <rect class="fil5" x="0.04" y="0.05" width="0.01" height="0.05"/>
+    <rect class="fil5" transform="matrix(9.21438E-15 -0.347915 0.32874 8.70651E-15 0.0174807 0.0810534)" width="0.04" height="0.15"/>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,106 @@
+@media screen and (min-width: 768px) {
+  .button-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .content-logo {
+    width: 320px;
+  }
+
+  .logo-title-game,
+  .logo-title-game-dm {
+    width: 350px;
+  }
+
+  textarea {
+    max-width: 700px;
+  }
+
+  .btn-add-word,
+  .leave-game {
+    width: 230px;
+    padding: 20px;
+    font-size: 19px;
+  }
+
+  .btn-start-game,
+  .new-game {
+    width: 230px;
+    padding: 23px 40px;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .save-word {
+    line-height: 22px;
+    padding: 12px 40px;
+    width: 230px;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .content-canvas {
+    width: 430px;
+  }
+
+  .button-content {
+    width: 430px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .button-content {
+    margin-top: 30px;
+  }
+
+  .logo-title,
+  .logo-title-dm {
+    width: 270px;
+  }
+
+  footer {
+    top: 0;
+  }
+
+  .save-word {
+    margin-bottom: 10px;
+  }
+
+  .text-content {
+    max-height: 170px;
+  }
+
+  .text-area-container {
+    position: relative;
+    top: 30px;
+  }
+
+  .content-logo {
+    margin-top: 30px;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-height: 790px) {
+  .container.game {
+    height: auto;
+  }
+
+  .button-content.game {
+    margin-bottom: 40px;
+  }
+}

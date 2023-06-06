@@ -1,0 +1,325 @@
+/*! <---------header section --------->*/
+
+.header-btn {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  top: 0;
+  margin-top: 15px;
+}
+
+/*! <---------switch button section --------->*/
+
+.switch-mode {
+  background: var(--black-semi);
+  border-radius: 8px;
+  margin-right: 40px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
+button span {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  background: none;
+  color: var(--white-bone);
+}
+
+.switch-mode::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background: var(--white-bone);
+  top: 1;
+  left: 0;
+  right: unset;
+  border-radius: 6px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.switch-mode.active {
+  background: var(--dark-light-gray);
+  color: #000;
+}
+
+.switch-mode.active::after {
+  right: 0;
+  left: unset;
+}
+
+/*! <--------- Main section --------->*/
+
+.container {
+  background: linear-gradient(45deg, #ffd541 50%, #fdcd1d 50%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-logo {
+  margin-bottom: 20px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-title-game,
+.logo-title-game-dm {
+  width: 290px;
+  margin-top: 25px;
+}
+
+.content-logo .logo-title-game .logo-title-game-dm {
+  width: 100%;
+}
+
+.logo-title-game-dm {
+  display: none;
+}
+
+/*! <--------- Notification alert section --------->*/
+
+.icon-head {
+  margin-top: 15px;
+  width: 40px;
+}
+
+.alert-container.active {
+  z-index: 2;
+}
+
+.alert.active {
+  opacity: 1;
+}
+
+.scale-out-center.active {
+  -webkit-animation: scale-out-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: scale-out-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+.bounce-in-fwd.active {
+  -webkit-animation: bounce-in-fwd 700ms both;
+  animation: bounce-in-fwd 700ms both;
+}
+
+.alert-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 28px;
+  opacity: 0;
+  z-index: 1;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  padding: 30px 30px;
+  background: #1e2220;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  /* -webkit-box-shadow: 1px 3px 7px 1px #2424244b;
+  box-shadow: 1px 3px 7px 1px #2424244b; */
+}
+
+/*! <--------- canvas section --------->*/
+
+.content-canvas {
+  width: 340px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: #fdcd1d;
+  -webkit-box-shadow: 1px 2px 5px 1px #24242457;
+  box-shadow: 1px 2px 5px 1px #24242452;
+}
+
+.canvas {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 1px 2px 5px 1px #24242457;
+  box-shadow: 1px 2px 5px 1px #24242452;
+}
+
+.true-letters,
+.wrong-letters {
+  font-size: 25px;
+  font-family: "Heebo", sans-serif;
+  margin-top: 15px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.wrong-letters {
+  margin-top: 35px;
+}
+
+.content-letters h2 {
+  /*letras erroneas*/
+  font-family: "Heebo", sans-serif;
+  color: #1e2220;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+.true-letters span,
+.wrong-letters span {
+  height: 30px;
+  width: 30px;
+  color: #1e2220;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 4px solid #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.num-intentos {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1e2220;
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+
+.content-letters {
+  width: 100%;
+  height: 120px;
+  background: none;
+}
+
+.icon-keyboard {
+  width: 45px;
+  cursor: pointer;
+}
+
+/*! <--------- buttons section --------->*/
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 430px; */
+  position: relative;
+  top: 0px;
+}
+.new-game {
+  cursor: pointer;
+  text-align: center;
+  background-size: 200% auto;
+  background-color: #1e2220;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 253, 253);
+  text-decoration: none;
+  margin-bottom: 17px;
+  padding: 22px 82px;
+  border-radius: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.new-game:hover {
+  font-weight: bold;
+  font-size: 19.5px;
+  border: 4px solid #fff;
+  color: #1e2220;
+  -webkit-box-shadow: 2px 2px 5px 1px #2424247c;
+  box-shadow: 2px 2px 5px 1px #2424247c;
+  background: linear-gradient(45deg, #fdcd1d 53%, #ffd541 50%);
+}
+
+.leave-game:hover {
+  font-weight: 500;
+  color: #fff;
+  border: transparent;
+  -webkit-box-shadow: 1px 2px 5px 1px #2424247c;
+  box-shadow: 1px 2px 5px 1px #2424247c;
+  background-color: #1e2220;
+}
+
+.new-game:hover,
+.leave-game:hover {
+  transform: scale(1.08);
+}
+
+.new-game:hover,
+.leave-game:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #2424247c;
+  box-shadow: 2px 2px 5px 2px #2424247c;
+}
+
+.leave-game {
+  cursor: pointer;
+  text-align: center;
+  background-color: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  color: #1e2220;
+  text-decoration: none;
+  width: 200px;
+  padding: 12px 10px;
+  border-radius: 14px;
+  border: 4px solid rgb(255, 253, 253);
+  transition: all 0.2s ease-in-out;
+}
+
+#mobile-input {
+  position: absolute;
+  top: -100vh;
+  left: -100vh;
+}
+
+.content-keyboard a {
+  cursor: pointer;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.content-keyboard a img {
+  position: relative;
+  left: 11px;
+  top: 5px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.content-keyboard a img:hover {
+  transform: scale(1.25);
+}
+
+/* .input-keyboard {
+  /* color: transparent; */

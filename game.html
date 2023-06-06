@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Juego del Ahorcado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!---- fontawesome ---->
+
+    <script src="https://kit.fontawesome.com/4d63ed8f35.js" crossorigin="anonymous"></script>
+
+     <!---- favicon ---->
+
+     <link
+     rel="shortcut icon"
+     href="./assets/logo-favi-light.svg"
+     type="image/x-icon"/>
+
+      <!---- fonts ---->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+      <!---- styles ---->
+
+      <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="css\game.css"/>
+    <link rel="stylesheet" href="./css/dark-mode.css" />
+    <link rel="stylesheet" href="./css/animista-animation.css"/>
+    <link rel="stylesheet" href="./css/responsive.css"/>
+  </head>
+
+  <body>
+
+    
+    <div class="alert-container">
+      <span class="alert bounce-in-fwd scale-out-center">
+        <img src="assets/icon-head-lose.svg" class="icon-head" />
+        <img src="assets/icon-head-win.svg" class="icon-head" />
+        Ganaste!
+      </span>
+    </div>
+    
+    <!---- Main sections ---->
+    
+    <main class="container game">
+      <div id="sfcal5jcj2c8rnsuz5saet7tbgf352wza4n"></div><script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=al5jcj2c8rnsuz5saet7tbgf352wza4n&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="http contador de visitas com"><img src="https://counter9.stat.ovh/private/contadorvisitasgratis.php?c=al5jcj2c8rnsuz5saet7tbgf352wza4n" border="0" title="http contador de visitas com" alt="http contador de visitas com"></a></noscript>
+      <header class="header-btn">
+        <button class="switch-mode" id="switch-mode">
+          <span><i class="fa-solid fa-sun"></i></span>
+          <span><i class="fa-solid fa-moon"></i></span>
+        </button>
+      </header>
+      <div class="content-logo">
+        <img src="assets/logo-main.svg" class="logo-title-game" />
+        <img src="assets/img-dark-mode/logo-main-dm.svg" class="logo-title-game-dm" />
+      </div>
+
+      <!---- canvas sections ---->
+
+      <div class="content-canvas">
+        <canvas class="canvas" width="350" height="265"></canvas>
+      
+      <div class="content-letters">
+        <div class="true-letters">
+         
+        </div>
+        <h2>Letras Erroneas</h2>
+        <div class="wrong-letters">
+          
+        </div>
+        <div class="content-keyboard">
+          <p class="num-intentos">Intentos Restantes:
+            <span id="num-intentos"></span>
+          <!-- <input type="text" class="input-keyboard" id="input-keyboard"/>
+          <p id = "valores"></p>
+        </p>
+        <a class="btn-keyboard" id="btn-keyboard" ><img src="assets/icon-keyboard-light.svg"/></a> -->
+    </div>
+      </div>
+    </div>
+
+      <!---- button sections ---->
+
+      <div class="button-content game">
+        <a class="btn new-game">Nuevo Juego</a>
+        <a class="btn leave-game">Rendirse</a>
+      </div>
+      
+
+    </main>
+    <script src="js\canvas.js"></script>
+    <script src="js\dark-mode-game.js"></script>
+    <script src="js\localstorage.js"></script>
+  </body>
+</html>

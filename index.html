@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Juego del Ahorcado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!---- fontawesome ---->
+
+    <script
+      src="https://kit.fontawesome.com/4d63ed8f35.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!---- favicon ---->
+
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-favi-light.svg"
+      type="image/x-icon"
+    />
+
+    <!---- fonts ---->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---- styles ---->
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/dark-mode.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+    <!---- Main sections ---->
+
+    <main class="container-index">
+      <header class="header-btn">
+        <button class="switch-mode" id="switch-mode">
+          <span><i class="fa-solid fa-sun"></i></span>
+          <span><i class="fa-solid fa-moon"></i></span>
+        </button>
+      </header>
+      <div class="content-logo">
+        <img src="assets/logo-main.svg" class="logo-title" />
+        <img
+          src="assets/img-dark-mode/logo-main-dm.svg"
+          class="logo-title-dm"
+        />
+      </div>
+
+      <!---- button sections ---->
+
+      <div class="button-content">
+        <a href="game.html" class="btn btn-start-game">Iniciar Juego</a>
+        <a href="add-word.html" class="btn btn-add-word">Agregar Palabra</a>
+      </div>
+
+      <!---- footer sections ---->
+
+      <footer class="footer">
+        <div class="social-icon-content">
+          <a href="https://github.com/Esteban-M1000" target="_blank"
+            ><img src="assets/logo-github.svg" class="logo-github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/josttin-mendez/"
+            target="_blank"
+            ><img src="assets/logo-linkedin.svg" class="logo-linkedin"
+          /></a>
+        </div>
+        <div class="name-footer">
+          <h4 class="name-copy">&copy;Josttin Mendez - 2023</h4>
+        </div>
+
+        <!----footer dark mode ---->
+
+        <div class="social-icon-content-dark-mode">
+          <a href="https://github.com/Esteban-M1000" target="_blank"
+            ><img
+              src="assets/img-dark-mode/logo-github-dm.svg"
+              class="logo-github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/josttin-mendez/"
+            target="_blank"
+            ><img
+              src="assets/img-dark-mode/logo-linkedin-dm.svg"
+              class="logo-linkedin"
+          /></a>
+        </div>
+        <div class="name-footer-dm">
+          <h4 class="name-copy">&copy;Josttin Mendez - 2023</h4>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/dark-mode.js"></script>
+    <script src="./js/localstorage.js"></script>
+  </body>
+</html>
