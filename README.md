@@ -13,7 +13,4 @@
 
 ---
 
-![](https://i.imgur.com/yeYsvNZ.jpg)
-![](https://i.imgur.com/vX9dcFU.jpg)
-
 
