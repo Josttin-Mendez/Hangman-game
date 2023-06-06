@@ -1,3 +1,4 @@
+
 # Desafio Juego del Ahorcado - ALURA LATAM - ORACLE ONE EDUCATION
 
 ### Tecnologias utilizadas:
@@ -13,4 +14,4 @@
 
 ---
 
-
+![Ahorcado](https://github.com/Esteban-M1000/Juego-del-Ahorcado-/assets/112291940/049f3adc-3afe-48a4-a678-04a569e7336a)
