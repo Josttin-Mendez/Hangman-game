@@ -14,4 +14,5 @@
 
 ---
 
-![Ahorcado](https://github.com/Esteban-M1000/Juego-del-Ahorcado-/assets/112291940/049f3adc-3afe-48a4-a678-04a569e7336a)
+![pagg](https://github.com/Esteban-M1000/Juego-del-Ahorcado/assets/112291940/1a865eef-22f3-4465-8a3e-d75851d4ac05)
+
