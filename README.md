@@ -4,7 +4,7 @@
 ### Index 
 - [Project description](#Project-description)  
 - [Technologies used](#Technologies-used)  
-- [Features](#Features:)  
+- [Features](#**Features-:**)  
 
 ## Project description  
 Game created to guess the secret word, without dying trying.
