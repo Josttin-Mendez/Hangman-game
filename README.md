@@ -2,9 +2,10 @@
 # Hangman Game Challenge - ALURA LATAM - ORACLE ONE EDUCATION
 
 ### Index 
-- [Project description](#Project-description)  
-- [Technologies used](#Technologies-used)  
-- [Features](#Features-:)  
+- [Project description](#Project-description)
+- [Technologies used](#Technologies-used)
+- [Features](#Features)
+
 
 ## Project description  
 Game created to guess the secret word, without dying trying.
